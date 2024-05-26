@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod  # 定义资源种类为 Pod
+metadata:  # 元数据部分
+  name: http-server  # 定义 Pod 名称为 http-server
+  labels:  # 标签部分
+    app: http-server  # 定义标签 app 为 http-server
+spec:  # 规格部分
+  containers:  # 容器列表
+  - name: http-server  # 容器名称为 http-server
+    image: andyrunrunrun/example-server-image  # 容器镜像为 yancanmao/server-image
+    ports:  # 容器端口列表
+    - containerPort: 8080  # 容器暴露端口为 8080
+
+

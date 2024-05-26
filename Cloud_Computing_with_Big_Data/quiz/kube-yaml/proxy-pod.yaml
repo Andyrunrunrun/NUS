@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: http-proxy
+  labels:
+    app: http-proxy
+spec:
+  containers:
+  - name: http-proxy
+    image: andyrunrunrun/quiz-proxy
+    ports:
+    - containerPort: 8888

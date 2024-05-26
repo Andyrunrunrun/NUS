@@ -1,0 +1,9 @@
+apiVersion: v1  # 版本信息
+kind: Pod        # 类型为Pod
+metadata:        # 元数据
+  name: http-client  # 名称为http-client
+spec:            # 规范
+  containers:    # 容器
+  - name: http-client  # 容器名称为http-client
+    image: andyrunrunrun/example-client-image  # 镜像为yancanmao下的client-image
+
